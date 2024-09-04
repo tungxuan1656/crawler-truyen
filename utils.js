@@ -157,4 +157,5 @@ const re_check_crawler = () => {
     })
 }
 
-module.exports = { crawl, re_check_crawler, crawl_li }
+module.exports = { crawl, re_check_crawler, crawl_li, sleep }
+

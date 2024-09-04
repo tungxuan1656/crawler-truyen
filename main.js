@@ -1,7 +1,12 @@
-const { crawl, re_check_crawler, crawl_li } = require('./utils')
+const { crawl, re_check_crawler, sleep } = require('./utils')
 
-// crawl()
+const main = async () => {
+    console.log('CRAWL')
+    crawl()
+    await sleep(3000)
+    console.log('RE-CRAWL')
+    re_check_crawler()
+}
 
-re_check_crawler()
+main()
 
-// crawl_li('./output/nhan-to', 'https://metruyencv.com/truyen/nhan-to/chuong-16', 'chapter-16')
